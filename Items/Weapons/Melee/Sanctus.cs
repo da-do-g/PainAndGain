@@ -8,7 +8,7 @@ namespace PainAndGain.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("The sword of the very first Paladin\nIt pulses with a strange energy...");
+            Tooltip.SetDefault("The sword of the very first Paladin\nIt pulses with a strange energy..."); //self explanatory, use n\ for new lines
         }
         
         public override void SetDefaults()
@@ -18,7 +18,6 @@ namespace PainAndGain.Items.Weapons.Melee
             item.melee = true;                  //melee or no
             item.width = 94;                    //hitbox width
             item.height = 92;                   //hitbox height
-            item.tooltip = "";                  //self explanatory
             item.useTime = 20;                  //(placeholder) speed weapon is used
             item.useAnimation = 20;             //(placeholder) speed of animation of weapon
             item.useStyle = 1;                  //style of use
