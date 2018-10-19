@@ -23,7 +23,9 @@ namespace PainAndGain.Items.Weapons.Melee
             item.useStyle = 1;                  //style of use
             item.knockBack = 6;                 //(placeholder) knockback of weapon
             item.value = Item.buyPrice(0, 0, 10, 0) //cost of weapon
-            item.rare = 
+            item.rare = 3                       //item rarity -1 to 3 = prehardmode, 4 to 11 = hardmode
+            item.UseSound = SoundID.Item1;      //item use sound
+            item.autoReuse = true;              //autoswing or no
         }
     }
 }
