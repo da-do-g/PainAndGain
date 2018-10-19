@@ -20,10 +20,10 @@ namespace PainAndGain.Items.Weapons.Melee
             item.height = 92;                   //hitbox height
             item.useTime = 20;                  //(placeholder) speed weapon is used
             item.useAnimation = 20;             //(placeholder) speed of animation of weapon
-            item.useStyle = 1;                  //style of use
-            item.knockBack = 6;                 //(placeholder) knockback of weapon
-            item.value = Item.buyPrice(0, 0, 10, 0) //cost of weapon
-            item.rare = 3                       //item rarity -1 to 3 = prehardmode, 4 to 11 = hardmode
+            item.useStyle = 1;                  //The use style of weapon, 1 for swinging, 2 for drinking, 3 act like shortsword, 4 for use like life crystal, 5 for use staffs or guns
+            item.knockBack = 6;                 //(placeholder) knockback of weapon. 20 maximum
+            item.value = Item.buyPrice(gold: 2) //cost of weapon
+            item.rare = 3                       //item rarity -1 to 3 = prehardmode, 4 to 11 = hardmode, 12 = expert, 13 = quest
             item.UseSound = SoundID.Item1;      //item use sound
             item.autoReuse = true;              //autoswing or no
         }
