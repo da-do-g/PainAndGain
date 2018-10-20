@@ -24,7 +24,7 @@ namespace PainAndGain.Items.Weapons.Melee
             item.knockBack = 6;                 //(placeholder) knockback of weapon. 20 maximum
             item.value = Item.buyPrice(gold: 2) //cost of weapon
             item.rare = 3                       //item rarity -1 to 3 = prehardmode, 4 to 11 = hardmode, 12 = expert, 13 = quest
-            item.UseSound = SoundID.Item1;      //item use sound
+            item.UseSound = SoundID.Item1;      //item use sound. i dont know them all but 1 is definitely a sword
             item.autoReuse = true;              //autoswing or no
         }
     }
