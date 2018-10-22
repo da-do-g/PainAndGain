@@ -30,13 +30,13 @@ namespace PainAndGain.Items.Weapons.Melee
         }
         
         
-        public override void MeleeEffects(Player player, Rectangle hitbox)
+        /*public override void MeleeEffects(Player player, Rectangle hitbox)
 		{
 			if (Main.rand.Next(3) == 0)
 			{
 				//Emit dusts when swing the sword
 				Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("Sparkle"));  //VERY IMPORTANT TO CHANGE. NOT AN ACTUAL DUST TYPE, BUT WILL BE ADDED IN THE FUTURE.
 			}
-		}
+		}*/
     }
 }
