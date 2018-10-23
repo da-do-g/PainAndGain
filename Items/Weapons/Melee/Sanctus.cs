@@ -27,16 +27,18 @@ namespace PainAndGain.Items.Weapons.Melee
             item.rare = 3;                      //item rarity -1 to 3 = prehardmode, 4 to 11 = hardmode, 12 = expert, 13 = quest
             item.UseSound = SoundID.Item1;      //item use sound. i dont know them all but 1 is definitely a sword
             item.autoReuse = false;              //autoswing or no
+	    item.shoot = mod.ProjectileType("HolyBubble");
+	    item.shootSpeed = 1.75f
         }
         
         
         /*public override void MeleeEffects(Player player, Rectangle hitbox)
+	{
+		if (Main.rand.Next(3) == 0)
 		{
-			if (Main.rand.Next(3) == 0)
-			{
-				//Emit dusts when swing the sword
-				Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("Sparkle"));  //VERY IMPORTANT TO CHANGE. NOT AN ACTUAL DUST TYPE, BUT WILL BE ADDED IN THE FUTURE.
-			}
-		}*/
+			//Emit dusts when swing the sword
+			Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("Sparkle"));  //VERY IMPORTANT TO CHANGE. NOT AN ACTUAL DUST TYPE, BUT WILL BE ADDED IN THE FUTURE.
+		}
+	}*/
     }
 }
