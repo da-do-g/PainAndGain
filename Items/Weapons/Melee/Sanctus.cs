@@ -35,7 +35,7 @@ namespace PainAndGain.Items.Weapons.Melee
         
 	public override Vector2? HoldoutOffset()
 	{
-		return new Vector2(0, 5);
+		return new Vector2(-5, -5);
 	}
         
         /*public override void MeleeEffects(Player player, Rectangle hitbox)
