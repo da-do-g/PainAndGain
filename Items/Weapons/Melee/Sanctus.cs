@@ -12,7 +12,7 @@ namespace PainAndGain.Items.Weapons.Melee
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sanctus");
-            Tooltip.SetDefault("The sword of the very first Crusader\nIt pulses with a [c/4AEEFF:radiant ]energy..."); //self explanatory, use n\ for new lines
+            Tooltip.SetDefault("'The sword of the very first Crusader'\nIt pulses with a [c/4AEEFF:radiant ]energy..."); //self explanatory, use n\ for new lines
         }
         
         public override void SetDefaults()
