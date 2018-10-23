@@ -33,6 +33,10 @@ namespace PainAndGain.Items.Weapons.Melee
 	    item.shootSpeed = 1.75f
         }
         
+	public override Vector2? HoldoutOffset()
+	{
+		return new Vector2(0, 5);
+	}
         
         /*public override void MeleeEffects(Player player, Rectangle hitbox)
 	{
