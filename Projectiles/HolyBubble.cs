@@ -30,6 +30,7 @@ namespace PainAndGain.Projectiles
 			projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
 			projectile.tileCollide = true;          //Can the projectile collide with tiles?
 			projectile.extraUpdates = 1;            //Set to above 0 if you want the projectile to update multiple time in a frame
+        		projectile.rotation += (float)projectile.direction * 0.8f;
 		}
 
 		public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)
