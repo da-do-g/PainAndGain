@@ -30,7 +30,7 @@ namespace PainAndGain.Items.Weapons.Melee
             item.UseSound = SoundID.Item1;      //item use sound. i dont know them all but 1 is definitely a sword
             item.autoReuse = false;              //autoswing or no
 	    item.shoot = mod.ProjectileType("HolyBubble");
-	    item.shootSpeed = .99f;
+	    item.shootSpeed = .98f;
     }
         
 	public override Vector2? HoldoutOffset()
