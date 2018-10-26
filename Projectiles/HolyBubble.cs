@@ -19,13 +19,13 @@ namespace PainAndGain.Projectiles
 		{
 			projectile.width = 32;               //The width of projectile hitbox
 			projectile.height = 32;              //The height of projectile hitbox
-			projectile.aiStyle = 0;             //The ai style of the projectile, please reference the source code of Terraria
+			projectile.aiStyle = 18;             //The ai style of the projectile, please reference the source code of Terraria
 			projectile.friendly = true;         //Can the projectile deal damage to enemies?
 			projectile.hostile = false;         //Can the projectile deal damage to the player?
 			projectile.ranged = false;           //Is the projectile shoot by a ranged weapon?
 			projectile.penetrate = 1;           //How many monsters the projectile can penetrate. (OnTileCollide below also decrements penetrate for bounces as well)
 			projectile.timeLeft = 300;          //The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
-			projectile.alpha = 0;             //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
+			projectile.alpha = 255;             //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
 			projectile.light = 0.75f;            //How much light emit around the projectile
 			projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
 			projectile.tileCollide = true;          //Can the projectile collide with tiles?
@@ -48,9 +48,16 @@ namespace PainAndGain.Projectiles
 		
 		public override void AI()
 		{
-			projectile.velocity = (.99 * projectile.velocity) / 1f;
+			if (projectile.alpha > 45)
+			{
+				projectile.alpha -= 15;
+				if (projectile.alpha < 45)
+				{
+					projectile.alpha = 45;
+				}
+			}
 		}
 		
-		// will use Main.screenPosition to try and get feathers to fall from sky later
+		// will use Main.screenPosition or projectile.Center to try and get feathers to fall from sky later
 	}
 }
