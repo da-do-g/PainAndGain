@@ -25,7 +25,7 @@ namespace PainAndGain.Projectiles
 			projectile.ranged = false;           //Is the projectile shoot by a ranged weapon?
 			projectile.penetrate = 1;           //How many monsters the projectile can penetrate. (OnTileCollide below also decrements penetrate for bounces as well)
 			projectile.timeLeft = 300;          //The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
-			projectile.alpha = 55;             //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
+			projectile.alpha = 0;             //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
 			projectile.light = 0.75f;            //How much light emit around the projectile
 			projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
 			projectile.tileCollide = true;          //Can the projectile collide with tiles?
@@ -45,5 +45,12 @@ namespace PainAndGain.Projectiles
 			}
 			return true;
 		}
+		
+		public override void AI()
+		{
+			projectile.velocity = (.99 * projectile.velocity) / 1f;
+		}
+		
+		// will use Main.screenPosition to try and get feathers to fall from sky later
 	}
 }
