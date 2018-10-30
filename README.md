@@ -1,19 +1,10 @@
 # PainAndGain
-Wattup. This is a pretty new Terraria mod I'll be working on.
-It is open source, but I would appreciate it if you didn't steal anything.
-yeet
+Hello! Welcome to Pain And Gain, a newly created Terraria TModLoader mod, that is
+currently being created by two extremely hardworking users and two extremely lazy
+users.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-im unoriginal with names
+# Credits (AKA Discord Users)
+Cataclyzmicc - angery#2425
+Celestial Catnip - 
