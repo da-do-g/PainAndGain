@@ -8,8 +8,8 @@ users.
 # Credits (AKA Discord Users)
 Cataclyzmicc (Creator/Coder/Spriter) - angery#2425
 
-Celestial Catnip (Spriter) - 
+Celestial Catnip (Co-Creator/Spriter) - 
 
-[L] (Coder) - 
+[L] (Co-Creator/Coder) - 
 
-booz (Spriter) - 
+booz (Co-Creator/Spriter) - 
