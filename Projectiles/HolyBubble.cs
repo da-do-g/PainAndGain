@@ -47,8 +47,8 @@ namespace PainAndGain.Projectiles
 		
 		public override void AI()
 		{
-		        projectile.velocity.X = 16
-			projectile.velocity.Y = 16
+		        projectile.velocity.X = 16f
+			projectile.velocity.Y = 16f
 			if (projectile.velocity.X > 0)
 			{
 			        projectile.velocity.X *= 0.8f
