@@ -47,12 +47,12 @@ namespace PainAndGain.Projectiles
 		
 		public override void AI()
 		{
-		        projectile.velocity.X = 16f
-			projectile.velocity.Y = 16f
+		        projectile.velocity.X = 16f;
+			projectile.velocity.Y = 16f;
 			if (projectile.velocity.X > 0)
 			{
-			        projectile.velocity.X *= 0.8f
-				projectile.velocity.Y *= 0.8f
+			        projectile.velocity.X *= 0.8f;
+				projectile.velocity.Y *= 0.8f;
 			}
 			if (projectile.alpha > 45)
 			{
