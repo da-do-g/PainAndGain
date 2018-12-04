@@ -18,8 +18,7 @@ namespace PainAndGain.Projectiles
 		public override void SetDefaults()
 		{
 			projectile.width = 32;               //The width of projectile hitbox
-			projectile.height = 32;              //The height of projectile hitbox
-			projectile.aiStyle = 18;             //The ai style of the projectile, please reference the source code of Terraria
+			projectile.height = 32;              //The height of the projectile hitbox
 			projectile.friendly = true;         //Can the projectile deal damage to enemies?
 			projectile.hostile = false;         //Can the projectile deal damage to the player?
 			projectile.ranged = false;           //Is the projectile shoot by a ranged weapon?
@@ -48,6 +47,13 @@ namespace PainAndGain.Projectiles
 		
 		public override void AI()
 		{
+		        projectile.velocity.X = 16
+			projectile.velocity.Y = 16
+			if (projectile.velocity.X > 0)
+			{
+			        projectile.velocity.X *= 0.8f
+				projectile.velocity.Y *= 0.8f
+			}
 			if (projectile.alpha > 45)
 			{
 				projectile.alpha -= 15;
