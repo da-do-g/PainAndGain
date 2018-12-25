@@ -20,8 +20,8 @@ namespace PainAndGain.Items.Accessories
 
         public override void SetDefaults()
         {
-            item.width = 26;
-            item.height = 26;
+            item.width = 32;
+            item.height = 32;
             item.value = 20000;
             item.rare = 4;
             item.accessory = true;
