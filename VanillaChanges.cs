@@ -11,7 +11,7 @@ namespace PainAndGain
         {
             switch (type)
             {
-                case NPCID.Dryad:  //change Dryad whith what NPC you want
+                case NPCID.Dryad:  //change to whichever NPC needed
 
                     if (Main.hardMode) //if it's hardmode the NPC will sell this
                     {
