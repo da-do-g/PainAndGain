@@ -14,7 +14,7 @@ namespace PainAndGain.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("It shimmers with a kind energy");
+            Tooltip.SetDefault("It shimmers with a [c/FCB2FF:kind ]energy");
             DisplayName.SetDefault("Super Crown");
         }
 
